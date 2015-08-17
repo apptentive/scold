@@ -7,8 +7,7 @@ Gem::Specification.new do |s|
   s.platform = Gem::Platform::RUBY
   s.required_ruby_version = ">= 2.1.0"
   s.authors = ["John Fearnside"]
-  s.summary = "Hound-like Rubocop utility"
-  s.description = "#{s.summary}"
+  s.description = s.summary = "Hound-like Rubocop utility"
   s.email = "john@apptentive.com"
   s.homepage = "https://github.com/apptentive/scold"
   s.files = `git ls-files`.split($RS) do |file|
