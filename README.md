@@ -13,7 +13,7 @@ entire files, not just changed lines.
 
 Add to `Gemfile`:
 ```
-gem "scold", require: false
+gem "scold", require: false, github: "apptentive/scold"
 ```
 
 From command line:
