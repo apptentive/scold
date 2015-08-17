@@ -1,6 +1,6 @@
 module Scold
   class Hounder
-    def initialize(args)
+    def initialize(args = [])
       @args = args.dup
     end
 
@@ -9,7 +9,7 @@ module Scold
       Scolder.run(@args.concat(files)) unless files.empty?
     end
 
-    def self.run(args)
+    def self.run(args = [])
       new(args).call
     end
   end
