@@ -1,5 +1,6 @@
 # This file was copied from:
 #   https://raw.githubusercontent.com/thoughtbot/hound/master/config/style_guides/ruby.yml
+# then modified for compatibility with newer rubocop versions
 
 AllCops:
   Include:
@@ -334,7 +335,6 @@ Style/RegexpLiteral:
     '/' character.
   StyleGuide: https://github.com/bbatsov/ruby-style-guide#percent-r
   Enabled: false
-  MaxSlashes: 1
 Style/Semicolon:
   Description: Don't use semicolons to terminate expressions.
   StyleGuide: https://github.com/bbatsov/ruby-style-guide#no-semicolon
@@ -648,7 +648,7 @@ Style/BlockComments:
 Style/BlockEndNewline:
   Description: Put end statement of multiline block on its own line.
   Enabled: true
-Style/Blocks:
+Style/BlockDelimiters:
   Description: Avoid using {...} for multi-line blocks (multiline chaining is always
     ugly). Prefer {...} over do...end for single-line blocks.
   StyleGuide: https://github.com/bbatsov/ruby-style-guide#single-line-blocks
@@ -926,7 +926,7 @@ Style/UnneededPercentQ:
   Description: Checks for %q/%Q when single quotes or double quotes would do.
   StyleGuide: https://github.com/bbatsov/ruby-style-guide#percent-q
   Enabled: true
-Style/UnneededPercentX:
+Style/CommandLiteral:
   Description: Checks for %x when `` would do.
   StyleGuide: https://github.com/bbatsov/ruby-style-guide#percent-x
   Enabled: true
