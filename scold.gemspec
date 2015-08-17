@@ -23,10 +23,8 @@ Gem::Specification.new do |s|
   s.test_files = s.files.grep(%r{^(test|spec|features)/})
   s.require_paths = %w(lib)
   s.extra_rdoc_files = %w(README.md)
-  s.require_paths =
   s.rubygems_version = "2.4.8"
   s.add_runtime_dependency("rubocop", ">= 0.33.0")
   s.add_development_dependency("bundler", ">= 1.10.6")
-  s.add_development_dependency("pry")
   s.add_development_dependency("rspec", ">= 3.3.0")
 end
