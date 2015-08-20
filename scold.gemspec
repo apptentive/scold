@@ -24,7 +24,6 @@ Gem::Specification.new do |s|
   s.extra_rdoc_files = %w(README.md)
   s.rubygems_version = "2.4.8"
   s.add_runtime_dependency("rubocop", ">= 0.33.0")
-  s.add_runtime_dependency("rugged")
   s.add_development_dependency("bundler", ">= 1.10.6")
   s.add_development_dependency("rspec", ">= 3.3.0")
 end

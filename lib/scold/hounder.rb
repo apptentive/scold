@@ -1,21 +1,11 @@
 module Scold
   class Hounder
-    CHANGED = %i(
-      index_modified
-      index_new
-      worktree_modified
-      worktree_new
-    ).freeze
-
     def initialize(args = [])
       @args = args.dup
     end
 
     def call
-      files = []
-      require "rugged"
-      repo = Rugged::Repository.new(Dir.pwd)
-      repo.status { |f, d| files << f unless (CHANGED & d).empty? }
+      files = `git diff-index --name-only master`.split($RS)
       if files.empty?
         require "scold/exit"
         Exit::SUCCESS
