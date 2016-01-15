@@ -6,7 +6,7 @@ Gem::Specification.new do |s|
   s.version = Scold::VERSION
   s.platform = Gem::Platform::RUBY
   s.license  = "MIT"
-  s.required_ruby_version = ">= 2.1.0"
+  s.required_ruby_version = ">= 2.2.4"
   s.authors = ["John Fearnside"]
   s.summary = "Hound-like Rubocop utility"
   s.description = "#{s.summary}."
@@ -25,7 +25,7 @@ Gem::Specification.new do |s|
   s.require_paths = %w(lib)
   s.extra_rdoc_files = %w(README.md)
   s.rubygems_version = "2.5.0"
-  s.add_runtime_dependency("rubocop", "~> 0.35")
-  s.add_development_dependency("bundler", "~> 1.10")
-  s.add_development_dependency("rspec", "~> 3.3")
+  s.add_runtime_dependency("rubocop", "~> 0.36")
+  s.add_development_dependency("bundler", "~> 1.11")
+  s.add_development_dependency("rspec", "~> 3.4")
 end
