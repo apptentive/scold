@@ -23,3 +23,11 @@ bundle exec scold [rubocop-options] [files...]
 ```
 bundle exec hound [rubocop-options] 
 ```
+
+# Development
+
+```
+bundle exec rspec # test locally
+rm *.gem; gem build *.gemspec # build locally
+gem push *.gem # publish to rubygems.org
+```
