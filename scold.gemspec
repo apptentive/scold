@@ -25,7 +25,7 @@ Gem::Specification.new do |s|
   s.require_paths = %w(lib)
   s.extra_rdoc_files = %w(README.md)
   s.rubygems_version = "2.5.0"
-  s.add_runtime_dependency("rubocop", "~> 0.37")
+  s.add_runtime_dependency("rubocop", "~> 0.54")
   s.add_development_dependency("bundler", "~> 1.11")
   s.add_development_dependency("rspec", "~> 3.4")
 end

@@ -39,7 +39,8 @@ Style/IfUnlessModifier:
   Description: Favor modifier if/unless usage when you have a single-line body.
   StyleGuide: https://github.com/bbatsov/ruby-style-guide#if-as-a-modifier
   Enabled: false
-  MaxLineLength: 80
+  Metrics/LineLength:
+    Max: 80
 Style/OptionHash:
   Description: Don't use option hashes when you can use keyword arguments.
   Enabled: false
@@ -126,13 +127,23 @@ Style/TrailingCommaInArguments:
   SupportedStylesForMultiline:
   - comma
   - no_comma
-Style/TrailingCommaInLiteral:
-  Description: Checks for trailing comma in literals.
+Style/TrailingCommaInArrayLiteral:
+  Description: Checks for trailing comma in array literals.
   StyleGuide: https://github.com/bbatsov/ruby-style-guide#no-trailing-array-commas
   Enabled: false
   EnforcedStyleForMultiline: no_comma
   SupportedStylesForMultiline:
   - comma
+  - consistent_comma
+  - no_comma
+Style/TrailingCommaInHashLiteral:
+  Description: Checks for trailing comma in hash literals.
+  StyleGuide: https://github.com/bbatsov/ruby-style-guide#no-trailing-array-commas
+  Enabled: false
+  EnforcedStyleForMultiline: no_comma
+  SupportedStylesForMultiline:
+  - comma
+  - consistent_comma
   - no_comma
 Metrics/AbcSize:
   Description: A calculated magnitude based on number of assignments, branches, and
